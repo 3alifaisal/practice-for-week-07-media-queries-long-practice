@@ -51,5 +51,31 @@ nav a.selected {
     color: #000021;
     cursor: default;
 }
-
 /* Your code here */
+@media print {
+    nav {
+        display: none;
+
+    }
+}
+@media (height < 640px) {
+    header.homepage {
+        height: 220px;
+    }   
+}
+
+@media (hover: hover) {
+    a{
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+        /* Show underlines on hover and focus for desktop users */
+    }
+}
+
+@media (hover: none) {
+    a {
+        text-decoration: underline;
+    }
+}

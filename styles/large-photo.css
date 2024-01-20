@@ -19,3 +19,35 @@ a.backButton {
 }
 
 /* Your code here */
+
+    
+@media print {
+    a.backButton {
+        display: none;
+    }
+
+    .notPrinted {
+        display: none;
+    }
+
+    h1+img {
+        width: 100%;
+    }
+
+    body {
+        background-color: white;
+        position: relative;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img+p {
+        display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+}

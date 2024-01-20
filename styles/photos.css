@@ -24,3 +24,57 @@
 }
 
 /* Your code here */
+@media screen and (600px < width < 900px), print  {
+    .photo-card{
+        text-align: left;
+    }
+    .photo-card .content{
+        display: flex;
+        gap: 10px
+
+    }
+    .photo-card img{
+        width: 50%;
+       
+        
+    }
+}
+
+@media screen and (900px < width < 1200px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 10px
+    }
+}
+@media screen and (width > 1200px){
+    .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px
+        }
+        .photo-card {
+            text-align: left;
+        }
+    
+        .photo-card .content {
+            display: flex;
+            gap: 10px
+        }
+    
+        .photo-card img {
+            width: 50%;
+    
+    
+        }
+}
+
+@media print {
+    .photo-card {
+        break-inside: avoid;
+    }
+
+    h2 {
+        break-after: avoid;
+    }
+}
